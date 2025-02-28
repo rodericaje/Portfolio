@@ -1,0 +1,747 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Reset */
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.img_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 100%;
+    color: #4ca8ff;
+}
+
+.img_header p, nav{
+    padding-top: 0%;
+    margin: auto;
+}
+
+.img_header p{
+    margin-right: 20%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.img_header img {
+    width: 500px;
+    height: auto;
+    margin-right: 10%;
+}
+
+.img_header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.img_header nav li {
+    display: inline-block;
+}
+
+.img_header nav li a {
+    display: inline; /* Le texte seul est cliquable */
+    text-decoration: none;
+    color: #4ca8ff;
+    transition: color 0.3s;
+    cursor: pointer; /* Affiche le curseur de lien */
+}
+
+.img_header nav li a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.img_header nav li a:focus {
+    outline: 2px solid #ffdd57;
+    outline-offset: 2px;
+}
+
+
+
+.section_1 p{
+    padding-bottom: 15px;
+}
+
+h1{
+    padding-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.section_1 span{
+    color: #4ca8ff;
+
+}
+
+/* bouton telecharger */ 
+/* Styles pour le bouton "Télécharger mon CV" */
+.home__buttons button {
+    background-color: #f0f0f0; /* Couleur de fond par défaut */
+    color: orange; /* Texte orange par défaut */
+    border: 2px solid orange; /* Bordure orange */
+    border-radius: 20px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement intérieur */
+    font-weight: bold; /* Texte en gras */
+    cursor: pointer; /* Curseur en forme de main */
+    transition: background-color 0.2s, color 0.2s; /* Transition douce */
+}
+
+/* Styles pour le lien à l'intérieur du bouton */
+.home__buttons button a {
+    text-decoration: none; /* Pas de soulignement */
+    color: inherit; /* Hérite de la couleur du bouton */
+}
+
+/* Changements au survol du bouton */
+.home__buttons button:hover {
+    background-color: orange; /* Fond orange */
+    color: white; /* Texte blanc */
+}
+
+/* Changements au survol du lien (optionnel, pour plus de précision) */
+.home__buttons button:hover a {
+    color: white; /* Texte blanc */
+}
+
+.button_2{
+
+    background-color: orange; /* Couleur de fond bleue */
+    color: white; /* Texte en blanc */
+    border: none; /* Pas de bordure */
+        border-radius: 20px; /* Coins arrondis */
+        padding: 10px 20px; /* Espacement intérieur */
+        font-weight: bold; /* Texte en gras */
+        cursor: pointer; /* Curseur en forme de main pour indiquer que c'est cliquable */
+        transition: background-color 0.2s; /* Transition douce pour le changement de couleur */
+        text-decoration: none;
+    
+}
+
+
+
+
+
+
+
+/* Portrait */
+.portrait {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portrait img {
+    width: 400px;
+}
+
+
+.section_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%; /* Pour que la section prenne toute la largeur */
+    min-height: 50vh; /* Ajuste la hauteur comme tu veux */
+}
+
+
+h2{
+    display: flex;
+    justify-content: center;
+    color: orange;
+    font-weight: bold;
+}
+
+/* Conteneur des boîtes de compétences */
+.skills-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espace entre les boîtes */
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Style de chaque boîte de compétences */
+.skill-box {
+    background-color: white; /* Fond blanc */
+    border-radius: 12px; /* Coins arrondis */
+    padding: 20px; /* Espace intérieur */
+    flex: 1; /* Chaque boîte prend une part égale de l'espace */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    border: 1px solid #e0e0e0; /* Bordure légère */
+}
+
+/* Titre de la boîte */
+.skill-box h3 {
+    color: #4ca8ff; /* Couleur bleue */
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style de chaque compétence */
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Icône de la compétence */
+.skill img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Texte de la compétence */
+.skill span {
+    flex: 1;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Niveau de compétence */
+.skill .skill-level {
+    font-size: 0.9em;
+    color: #555;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+}
+
+/* Effet au survol de la boîte */
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Style pour la section about */
+.about {
+    padding: 40px 20px; /* Espace intérieur */
+    max-width: 1200px; /* Largeur maximale */
+    margin: 0 auto; /* Centrer la section */
+}
+
+/* Conteneur pour l'image et le texte */
+.about-content {
+    display: flex; /* Utilisation de Flexbox */
+    align-items: center; /* Alignement vertical au centre */
+    gap: 40px; /* Espace entre l'image et le texte */
+}
+
+/* Style de l'image */
+.about-content img {
+    width: 400px; /* Largeur de l'image */
+    height: auto; /* Hauteur automatique pour garder les proportions */
+    border-radius: 12px; /* Coins arrondis */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+/* Style du texte */
+.about-content p {
+    flex: 1; /* Le texte prend tout l'espace disponible */
+    font-size: 1.1em; /* Taille de police */
+    line-height: 1.6; /* Interligne agréable */
+    color: #333; /* Couleur du texte */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+
+/* Conteneur des boîtes de qualités */
+.qualities-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espace entre les boîtes */
+    margin-bottom: 60px; /* Espace entre les boîtes et le texte */
+}
+
+/* Style de chaque boîte */
+.quality-box {
+    background-color: white; /* Fond blanc */
+    border-radius: 12px; /* Coins arrondis */
+    padding: 20px; /* Espace intérieur réduit */
+    text-align: center; /* Texte centré */
+    flex: 1; /* Chaque boîte prend une part égale de l'espace */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre plus légère */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
+    border: 1px solid #e0e0e0; /* Bordure légère */
+    max-width: 300px; /* Largeur maximale réduite */
+}
+
+/* Icône */
+.quality-box .icon {
+    font-size: 2em; /* Taille de l'icône réduite */
+    color: #4ca8ff; /* Couleur bleue */
+    margin-bottom: 15px; /* Espace sous l'icône réduit */
+}
+
+/* Titre de la boîte */
+.quality-box h3 {
+    color: #4ca8ff; /* Couleur bleue */
+    font-size: 1.2em; /* Taille de police réduite */
+    margin-bottom: 10px; /* Espace sous le titre réduit */
+}
+
+/* Texte de la boîte */
+.quality-box p {
+    color: #555; /* Couleur de texte plus douce */
+    font-size: 0.9em; /* Taille de police réduite */
+    line-height: 1.5; /* Interligne ajusté */
+}
+
+/* Effet au survol */
+.quality-box:hover {
+    transform: translateY(-5px) scale(1.02); /* Légère élévation et zoom */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Ombre plus prononcée */
+    background-color: #f9f9f9; /* Fond légèrement gris au survol */
+}
+
+/* Style de la section "Parcours" */
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: orange;
+    margin: 50px 0;
+}
+
+/* Style de la section "Parcours" */
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: orange;
+    margin: 50px 0;
+}
+
+/* Conteneur du bouton */
+#openModalBtn {
+    display: block; /* Assure que le bouton est un bloc */
+    margin: 40px auto; /* Centre horizontalement avec une marge en haut et en bas */
+    text-align: center; /* Centre le texte à l'intérieur du bouton */
+    position: relative; /* Nécessaire pour le positionnement des blobs */
+    z-index: 1; /* Assure que le bouton est au-dessus des autres éléments */
+    font-size: 1.2em; /* Taille de police plus grande */
+    padding: 1.2em 2.4em; /* Taille du bouton plus grande */
+}
+
+/* Styles de base pour le bouton */
+.c-button {
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0.9em 1.6em;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Styles spécifiques pour le bouton gooey */
+  .c-button--gooey {
+    color: #fff;
+    background-color: #06c8d9;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 4px solid #06c8d9;
+    border-radius: 50px; /* Coins arrondis */
+    transition: all 700ms ease;
+    overflow: hidden;
+  }
+  
+  /* Conteneur des blobs */
+  .c-button--gooey .c-button__blobs {
+    height: 100%;
+    filter: url(#goo);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -3px;
+    right: -1px;
+    z-index: -1;
+  }
+  
+  /* Blobs individuels */
+  .c-button--gooey .c-button__blobs div {
+    background-color: #06c8d9;
+    width: 34%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.4) translateY(125%) translateZ(0);
+    transition: all 700ms ease;
+  }
+  
+  /* Positionnement des blobs */
+  .c-button--gooey .c-button__blobs div:nth-child(1) {
+    left: -5%;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(2) {
+    left: 30%;
+    transition-delay: 60ms;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(3) {
+    left: 66%;
+    transition-delay: 25ms;
+  }
+  
+  /* Effet au survol */
+  .c-button--gooey:hover {
+    color: #fff;
+    border-color: transparent;
+  }
+  
+  .c-button--gooey:hover .c-button__blobs div {
+    transform: scale(1.4) translateY(0) translateZ(0);
+  }
+/* Fond sombre semi-transparent */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fond plus foncé */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenu de la modal */
+.modal__content {
+    background-color: #fff; /* Fond blanc */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 900px; /* Largeur maximale */
+    width: 90%; /* Adaptatif */
+    max-height: 80vh; /* Hauteur maximale */
+    overflow-y: auto; /* Scrolling si nécessaire */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    position: relative;
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /* Espacement entre lignes */
+}
+
+/* Bouton de fermeture */
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    color: #333; /* Gris foncé */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.modal__close:hover {
+    color: #06c8d9; /* Bleu sur hover */
+}
+
+/* Titre de la modal */
+.modal__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Section Parcours */
+.parcours__timeline {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 0;
+}
+
+/* Élément de la timeline */
+.timeline__item {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Date de la timeline */
+.timeline__date {
+    width: 150px;
+    font-weight: bold;
+    color: #06c8d9; /* Bleu pour la date */
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* Ligne verticale */
+.timeline__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 160px;
+    height: 100%;
+    width: 2px;
+    background-color: #ddd; /* Gris clair */
+    z-index: -1;
+}
+
+/* Contenu de la timeline */
+.timeline__content {
+    flex: 1;
+    padding-left: 40px;
+    position: relative;
+}
+
+/* Point sur la ligne */
+.timeline__content::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    background-color: #06c8d9; /* Bleu pour le point */
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Petit effet d'ombre */
+}
+
+/* Titre du contenu */
+.timeline__content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Description du contenu */
+.timeline__content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .modal__content {
+        padding: 20px;
+    }
+    .timeline__item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .timeline__date {
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+    .timeline__item::before {
+        left: 0;
+        height: 2px;
+        width: 100%;
+    }
+    .timeline__content {
+        padding-left: 0;
+    }
+    .timeline__content::after {
+        top: 0;
+        left: -5px;
+    }
+}
+
+.boite-portfolio-1  {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: solid black;
+    border-radius: 10%;
+    background-color: #06c8d9;
+
+
+}
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Section Portfolio */
+.portfolio-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Grille pour les projets */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Carte de projet */
+.portfolio-item {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Contenu de la carte */
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Conteneur d'image */
+.portfolio-img-container {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Image du projet */
+.portfolio-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-img {
+    transform: scale(1.05);
+}
+
+/* Informations du projet */
+.portfolio-info {
+    padding: 20px;
+}
+
+.portfolio-info h3 {
+    color: #4ca8ff;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.portfolio-info p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Lien vers le projet */
+.portfolio-link {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.portfolio-link i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-link:hover {
+    color: #4ca8ff;
+}
+
+.portfolio-link:hover i {
+    transform: translateX(5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Styles généraux pour le footer */
+.footer {
+    color: #333; 
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Contenu du footer */
+.footer__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Lien vers LinkedIn et GitHub */
+.footer__links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer__links li {
+    display: inline-block;
+}
+
+.footer__links a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Icônes des réseaux sociaux */
+.footer__icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer__links a:hover .footer__icon {
+    transform: scale(1.2); /* Effet de zoom au survol */
+    filter: invert(0.8); /* Légère variation de couleur */
+}
+
+/* Informations de contact */
+.footer p {
+    margin: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer__icon {
+        width: 25px;
+        height: 25px;
+    }
+}
